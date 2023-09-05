@@ -4,5 +4,7 @@
 A retro-futuristic tech mod!
 Wires, transformers, capacitors!
 
+sparse unofficial updates for 1.12.2
+
 # Downloads
-[CurseForge](https://minecraft.curseforge.com/projects/immersive-engineering/files) 
+[gitgud](https://gitgud.io/kvieta/immersiveengineering/-/releases)
