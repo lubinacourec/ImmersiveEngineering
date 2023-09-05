@@ -130,7 +130,7 @@ public class DieselHelper
 		@Override
 		public String describe()
 		{
-			return "Removing ALL Diesel Generator Fuels"
+			return "Removing ALL Diesel Generator Fuels";
 		}
 	}
 
