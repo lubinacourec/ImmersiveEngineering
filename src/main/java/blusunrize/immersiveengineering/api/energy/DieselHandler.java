@@ -83,6 +83,11 @@ public class DieselHandler
 		}
 	}
 
+	public static void removeAllFuels()
+	{
+		dieselGenBurnTime.clear();
+	}
+
 	public static void removeDrillFuel(Fluid fuel)
 	{
 		drillFuel.remove(fuel);

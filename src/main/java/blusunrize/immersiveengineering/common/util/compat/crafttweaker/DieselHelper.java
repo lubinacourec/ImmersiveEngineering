@@ -106,7 +106,31 @@ public class DieselHelper
 		@Override
 		public String describe()
 		{
-			return "Removing Fuel "+fuel.getDisplayName();
+			return "Removing Diesel Generator Fuel "+fuel.getDisplayName();
+		}
+	}
+
+	@ZenMethod
+	public static void removeAllFuels()
+	{
+		CraftTweakerAPI.apply(new RemoveAllFuels());
+	}
+
+	private static class RemoveAllFuels implements IAction
+	{
+		public RemoveAllFuels(){
+		}
+
+		@Override
+		public void apply()
+		{
+			DieselHandler.removeAllFuels();
+		}
+
+		@Override
+		public String describe()
+		{
+			return "Removing ALL Diesel Generator Fuels"
 		}
 	}
 
