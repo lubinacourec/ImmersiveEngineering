@@ -163,5 +163,27 @@ public class DieselHelper
 		}
 	}
 
+	@ZenMethod
+	public static void dumpFuels()
+	{
+		CraftTweakerAPI.apply(new DumpFuels());
+	}
+
+	private static class DumpFuels implements IAction
+	{
+		public DumpFuels(){
+		}
+
+		@Override
+		public void apply()
+		{
+		}
+
+		@Override
+		public String describe()
+		{
+			return "Valid Diesel Generator Fuels and burn time:"+DieselHandler.listAllDiesel();
+		}
+	}
 
 }

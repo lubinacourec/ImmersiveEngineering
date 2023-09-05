@@ -92,4 +92,21 @@ public class DieselHandler
 	{
 		drillFuel.remove(fuel);
 	}
+
+	public static String listAllDiesel()
+	{
+		StringBuilder result = new StringBuilder();
+		result.append("{");
+		for (Map.Entry<String, Integer> entry : dieselGenBurnTime.entrySet()) {
+			result.append(entry.getKey())
+                		.append("=")
+                		.append(entry.getValue())
+                		.append(", ");
+		}
+        	if (result.length() > 1) {
+	            result.setLength(result.length() - 2);
+        	}
+		result.append("}");
+		return result.toString();
+	}
 }
