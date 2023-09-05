@@ -1,4 +1,4 @@
-##### Version 0.12-99
+##### Version 0.12-99 - BUILT
 - Added option to disable default diesel generator fuels to fix a longstanding issue. (Lycide)
 
 ##### Version 0.12-98 - BUILT
